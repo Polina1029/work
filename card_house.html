@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компас недвижимости</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- btn_to_top -->
+    <a href="#" class="btn_to_top">↑</a>
+
+    <!-- header start -->
+    <header>
+        <div class="header_all header_bottom">
+            <div class="header_menu header_menu_content container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo/logo.png" alt="">
+                        Компас <span>недвижимости</span>
+                    </a>
+                </div>
+
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <a href="favorit.html">Избранное</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a class="user_icon"><img src="assets/images/header/User.png" alt=""></a>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="header_tel">
+
+            <div class="burger-menu">
+
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo/logo.png" alt="">
+                        Компас <span>недвижимости</span>
+                    </a>
+                </div>
+
+                <div class="img_like_icon">
+                    <a href="#">
+                        <img src="assets/images/icons/like.png" alt="">
+                    </a>
+                </div>
+
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle" class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="burger-menu-nav">
+                    <a href="index.html">Главная</a>
+                    <a href="favorit.html">Избранное</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a class="user_icon" id="open-login-btn">Войти</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="modal_reg">
+            <div class="modal_content_reg">
+                <span class="close_reg">&times;</span>
+                <h2>Регистрация</h2>
+                <form action="#" method="POST">
+                    <label for="name_reg">Ваше имя</label>
+                    <input type="text" id="name_reg" name="name_reg" placeholder="Введите имя">
+
+                    <label for="email_reg">Ваша почта</label>
+                    <input type="email" id="email_reg" name="email_reg" placeholder="Введите почту">
+
+                    <label for="password_reg">Пароль</label>
+                    <input type="password" id="password_reg" name="password_reg" placeholder="Придумайте пароль">
+
+                    <label for="confirm_password_reg">Подтверждение пароля</label>
+                    <input type="password" id="confirm_password_reg" name="confirm_password_reg"
+                        placeholder="Повторите пароль">
+
+                    <p class="person_lisense">Нажимая кнопку ниже вы даете разрешение <a
+                            href="assets/documents/person_info.doc">на обработку персональных данных</a></p>
+                    <button type="submit" class="btn_reg">Зарегистрироваться</button>
+                </form>
+                <div class="acaunt">
+                    <p>Уже есть аккаунт?</p>
+                    <a href="#" id="open-login-modal">Войдите</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal_login" id="login-modal">
+            <div class="modal_content_login">
+                <span class="close_login" id="close-login-modal">&times;</span>
+                <h2>Вход</h2>
+                <form>
+                    <label for="email">Ваша почта</label>
+                    <input type="email" id="email" placeholder="Введите почту">
+
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Введите пароль">
+
+                    <button type="submit" class="btn_login">Войти</button>
+                </form>
+                <div class="acaunt">
+                    <p>Еще нет аккаунта? Тогда </p>
+                    <p><a href="#">Зарегистрируйтесь</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="assets/js/main.js"></script>
+    </header>
+    <!-- header end -->
+
+
+    <!-- card_house start -->
+    <div class="card_house container">
+        <div class="img_house img_all">
+            <div class="img1">
+                <img src="assets/images/card_house/1.png" alt="" class="card_house_img">
+            </div>
+            <div class="img2_3">
+                <div class="img2">
+                    <img src="assets/images/card_house/2.png" alt="" class="card_house_img">
+                    <img src="assets/images/card_house/3.png" alt="" class="card_house_img">
+                    <img src="assets/images/card_house/4.png" alt="" class="card_house_img">
+                </div>
+                <div class="img3">
+                    <img src="assets/images/card_house/5.png" alt="" class="card_house_img">
+                    <img src="assets/images/card_house/6.png" alt="" class="card_house_img">
+                    <img src="assets/images/card_house/7.png" alt="" class="card_house_img">
+                </div>
+            </div>
+        </div>
+
+        <div class="img_tel">
+            <div class="img1_2">
+                <div class="img1">
+                    <img src="assets/images/card_house/1.png" alt="" class="card_house_img">
+                </div>
+                <div class="img2_3 card_img">
+                    <div class="img2">
+                        <img src="assets/images/card_house/2.png" alt="" class="card_house_img">
+                        <img src="assets/images/card_house/3.png" alt="" class="card_house_img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="img3">
+                <img src="assets/images/card_house/4.png" alt="" class="card_house_img">
+                <img src="assets/images/card_house/5.png" alt="" class="card_house_img">
+                <img src="assets/images/card_house/6.png" alt="" class="card_house_img">
+                <img src="assets/images/card_house/7.png" alt="" class="card_house_img">
+            </div>
+
+        </div>
+
+        <div class="card_house_info">
+
+            <div class="btn_card_house">
+                <p class="price">12 100 000 ₽</p>
+
+                <div class="btns_card_house">
+                    <a href="#" class="btn_blue" id="openModalBtn">Записаться на просмотр</a>
+                    <a href="#" class="btn_border">В избранное</a>
+                </div>
+            </div>
+
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <div class="close_icon">
+                        <span class="close" id="closeModal">&times;</span>
+                    </div>
+                    <h2>Запишитесь на просмотр прямо сейчас!</h2>
+
+                    <form id="bookingForm">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Имя" required>
+
+                        <label for="phone">Ваш телефон</label>
+                        <input type="tel" id="phone" placeholder="Телефон" required>
+
+                        <label for="date">Выберите дату</label>
+                        <input type="date" id="date" required>
+
+                        <label for="time">Выберите время</label>
+                        <input type="time" id="time" required>
+
+                        <button type="submit" class="btn_blue">Записаться</button>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                const modal = document.getElementById('myModal');
+                const openModalBtn = document.getElementById('openModalBtn');
+                const closeModalBtn = document.getElementById('closeModal');
+
+                openModalBtn.addEventListener('click', () => {
+                    modal.style.display = 'block';
+                });
+
+                closeModalBtn.addEventListener('click', () => {
+                    modal.style.display = 'none';
+                });
+
+                window.addEventListener('click', (event) => {
+                    if (event.target === modal) {
+                        modal.style.display = 'none';
+                    }
+                });
+
+                document.getElementById('bookingForm').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    const name = document.getElementById('name').value;
+                    const phone = document.getElementById('phone').value;
+                    const date = document.getElementById('date').value;
+                    const time = document.getElementById('time').value;
+
+                    if (name && phone && date && time) {
+                        alert(`Спасибо за запись, ${name}! Мы свяжемся с вами для подтверждения записи на ${date} в ${time}.`);
+                        modal.style.display = 'none';
+                    } else {
+                        alert('Пожалуйста, заполните все поля.');
+                    }
+                });
+            </script>
+
+
+            <div class="house_info">
+
+                <div class="description">
+                    <div class="title_card">
+                        <p>Описание</p>
+                    </div>
+                    <div class="title_description" id="initialDescription">
+                        <p>Квартира находится в жилом комплексе «Аристократ» — это современный проект, сочетающий
+                            элегантность и комфорт. Он предлагает жителям высокий уровень жизни благодаря продуманной
+                            инфраструктуре, зеленым зонам и удобному расположению. Архитектура комплекса выделяется
+                            стильными фасадами и уютными общественными пространствами.</p>
+                    </div>
+                    <div class="title_description" id="extendedDescription" style="display: none;">
+                        <p>Эта уютная трехкомнатная квартира площадью 50 кв.м. идеально подходит для комфортного
+                            проживания.
+                            Внутреннее пространство грамотно спланировано, что позволяет максимально эффективно
+                            использовать каждый
+                            квадратный метр.
+                            Квартира выполнена с использованием качественных материалов и современного дизайна, что
+                            делает её идеальным
+                            выбором для тех, кто ценит стиль и комфорт. Жители ЖК «Аристократ» могут наслаждаться
+                            развитой
+                            инфраструктурой, включая магазины, кафе и зеленые зоны для отдыха.</p>
+                    </div>
+
+                    <div class="title_btn">
+                        <a href="#" id="showMoreButton">Показать больше ↓</a>
+                    </div>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const extendedDescription = document.getElementById('extendedDescription');
+                        const showMoreButton = document.getElementById('showMoreButton');
+
+                        showMoreButton.addEventListener('click', function (event) {
+                            event.preventDefault();
+
+                            if (extendedDescription.style.display === 'none') {
+                                extendedDescription.style.display = 'block';
+                                showMoreButton.textContent = 'Скрыть ↑';
+                            } else {
+                                extendedDescription.style.display = 'none';
+                                showMoreButton.textContent = 'Показать больше ↓';
+                            }
+                        });
+                    });
+                </script>
+
+
+
+                <div class="about_home">
+                    <div class="title_card">
+                        <p>Характиристики объекта</p>
+                    </div>
+                    <div class="about_info">
+                        <p><span class="name">Количество комнат:</span> 3 <br>
+                            <span class="name">Площадь:</span> 50 кв.м. <br>
+                            <span class="name">Этаж:</span> 5/11 <br>
+                            <span class="name">Застройщик:</span> ООО «Новый город» <br>
+                            <span class="name">Дата постройки дома:</span> апрель, 2021 год
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- map start  -->
+        <div class="map_home distance">
+            <div class="title">
+                <div class="name">Местоположение на карте</div>
+            </div>
+
+            <div id="map-container" class="map-container map-container-house"></div>
+        </div>
+
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+        <script>
+            ymaps.ready(init);
+
+            function init() {
+                var myMap = new ymaps.Map("map-container", {
+                    center: [55.779175, 49.133220],
+                    zoom: 16,
+                    controls: []
+                });
+
+                var myPlacemark = new ymaps.Placemark([55.779175, 49.133220], {
+                    balloonContent: 'Спартаковская улица, 43В'
+                });
+
+                myMap.geoObjects.add(myPlacemark);
+            }
+        </script>
+
+    </div>
+    <!-- map end -->
+    <!-- card_house end -->
+
+
+    <!-- footer start  -->
+    <footer class="distance">
+        <div class="footer_menu container">
+            <div class="nav_menu">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo/logo.png" alt="">
+                        <p>Компас <span class="logo_span">недвижимости</span></p>
+                    </a>
+                </div>
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <a href="favorit.html">Избранное</a>
+                    <a href="catalog.html">Каталог</a>
+                </nav>
+            </div>
+            <div class="links_footer">
+                <p>©Матросова Полина Евгеньевна, 2025 г.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end  -->
+
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компас недвижимости</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="header_all header_bottom">
+            <div class="header_menu header_menu_content container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo/logo.png" alt="">
+                        Компас <span>недвижимости</span>
+                    </a>
+                </div>
+
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <a href="favorit.html">Избранное</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a class="user_icon"><img src="assets/images/header/User.png" alt=""></a>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="header_tel">
+
+            <div class="burger-menu">
+
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo/logo.png" alt="">
+                        Компас <span>недвижимости</span>
+                    </a>
+                </div>
+
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle" class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="burger-menu-nav">
+                    <a href="index.html">Главная</a>
+                    <a href="favorit.html">Избранное</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a class="user_icon" id="open-login-btn">Войти</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="modal_reg">
+            <div class="modal_content_reg">
+                <span class="close_reg">&times;</span>
+                <h2>Регистрация</h2>
+                <form action="#" method="POST">
+                    <label for="name_reg">Ваше имя</label>
+                    <input type="text" id="name_reg" name="name_reg" placeholder="Введите имя">
+
+                    <label for="email_reg">Ваша почта</label>
+                    <input type="email" id="email_reg" name="email_reg" placeholder="Введите почту">
+
+                    <label for="password_reg">Пароль</label>
+                    <input type="password" id="password_reg" name="password_reg" placeholder="Придумайте пароль">
+
+                    <label for="confirm_password_reg">Подтверждение пароля</label>
+                    <input type="password" id="confirm_password_reg" name="confirm_password_reg"
+                        placeholder="Повторите пароль">
+
+                    <p class="person_lisense">Нажимая кнопку ниже вы даете разрешение <a
+                            href="assets/documents/person_info.doc">на обработку персональных данных</a></p>
+                    <button type="submit" class="btn_reg">Зарегистрироваться</button>
+                </form>
+                <div class="acaunt">
+                    <p>Уже есть аккаунт?</p>
+                    <a href="#" id="open-login-modal">Войдите</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal_login" id="login-modal">
+            <div class="modal_content_login">
+                <span class="close_login" id="close-login-modal">&times;</span>
+                <h2>Вход</h2>
+                <form>
+                    <label for="email">Ваша почта</label>
+                    <input type="email" id="email" placeholder="Введите почту">
+
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Введите пароль">
+
+                    <button type="submit" class="btn_login">Войти</button>
+                </form>
+                <div class="acaunt">
+                    <p>Еще нет аккаунта? Тогда </p>
+                    <p><a href="#">Зарегистрируйтесь</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="assets/js/main.js"></script>
+    </header>
+    <!-- header end -->
+
+
+    <!-- favorit start  -->
+    <div class="favorit container">
+        <div class="favorit_cards favorit_all">
+
+            <div class="favorit_card">
+                <div class="img_like">
+                    <img src="assets/images/favorit/1.png" alt="">
+                </div>
+                <div class="info_like">
+                    <p class="name">Квартира</p>
+                    <p class="price">9 000 000 ₽</p>
+                    <div class="adress">
+                        <img src="assets/images/icons/Location.png" alt="">
+                        <p>улица Бондаренко, 15</p>
+                    </div>
+                    <a href="#" class="btn_blue btn_see_form">Записаться на просмотр</a>
+                </div>
+                <div class="img_icon_like">
+                    <a href="#"><img src="assets/images/icons/Favorite.svg" alt="" class="delete_object"></a>
+                </div>
+            </div>
+
+            <div class="favorit_card">
+                <div class="img_like">
+                    <img src="assets/images/favorit/2.png" alt="" class="delete_object">
+                </div>
+                <div class="info_like">
+                    <p class="name">Дом</p>
+                    <p class="price">27 000 000 ₽</p>
+                    <div class="adress">
+                        <img src="assets/images/icons/Location.png" alt="">
+                        <p>улица Надежды, 8</p>
+                    </div>
+                    <a href="#" class="btn_blue btn_see_form">Записаться на просмотр</a>
+                </div>
+
+                <div class="img_icon_like">
+                    <a href="#"><img src="assets/images/icons/Favorite.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="favorit_tel">
+            <div class="favorit_btn">
+                <div class="favorit_card">
+                    <div class="img_like">
+                        <img src="assets/images/favorit/1.png" alt="" class="delete_object">
+                    </div>
+                    <div class="info_like">
+                        <p class="name">Квартира</p>
+                        <p class="price">9 000 000 ₽</p>
+                        <div class="adress">
+                            <img src="assets/images/icons/Location.png" alt="">
+                            <p>улица Бондаренко, 15</p>
+                        </div>
+
+                    </div>
+                    <div class="img_icon_like">
+                        <a href="#"><img src="assets/images/icons/Favorite.svg" alt="" class="delete_object"></a>
+                    </div>
+                </div>
+                <div class="btn_see">
+                    <a href="#" class="btn_blue btn_see_form">Записаться на просмотр</a>
+                </div>
+            </div>
+
+            <div class="favorit_btn">
+                <div class="favorit_card">
+                    <div class="img_like">
+                        <img src="assets/images/favorit/2.png" alt="">
+                    </div>
+                    <div class="info_like">
+                        <p class="name">Дом</p>
+                        <p class="price">27 000 000 ₽</p>
+                        <div class="adress">
+                            <img src="assets/images/icons/Location.png" alt="">
+                            <p>улица Надежды, 8</p>
+                        </div>
+
+                    </div>
+                    <div class="img_icon_like">
+                        <a href="#"><img src="assets/images/icons/Favorite.svg" alt="" class="delete_object"></a>
+                    </div>
+                </div>
+                <div class="btn_see">
+                    <a href="#" class="btn_blue btn_see_form">Записаться на просмотр</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn_line"></div>
+
+        <div class="btn">
+            <a href="#" class="btn_border delete">Удалить все объекты</a>
+        </div>
+
+        <div id="myModal_delete_photo" class="modal_delete_photo">
+            <div class="modal_content_delete_photo">
+                <span class="close_delete_photo close_reg">&times;</span>
+                <h2 class="modal_title_delete_photo">Вы действительно хотите удалить данную недвижимость?</h2>
+                <div class="btn_delete_photo">
+                    <button type="button" class="btn_cancel_delete_photo">Нет</button>
+                    <button type="button" class="btn_confirm_delete_photo">Да</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            const modalDeletePhoto = document.getElementById('myModal_delete_photo');
+            const deletePhotoBtns = document.querySelectorAll('.delete_object');
+            const closeModalDeletePhoto = document.querySelector('.close_delete_photo');
+            const btnCancelDeletePhoto = document.querySelector('.btn_cancel_delete_photo');
+
+            deletePhotoBtns.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    modalDeletePhoto.style.display = 'block';
+                });
+            });
+
+            closeModalDeletePhoto.addEventListener('click', () => {
+                modalDeletePhoto.style.display = 'none';
+            });
+
+            btnCancelDeletePhoto.addEventListener('click', () => {
+                modalDeletePhoto.style.display = 'none';
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modalDeletePhoto) {
+                    modalDeletePhoto.style.display = 'none';
+                }
+            });
+        </script>
+
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <div class="close_icon">
+                    <span class="close" id="closeModal">&times;</span>
+                </div>
+                <h2>Запишитесь на просмотр прямо сейчас!</h2>
+                <form id="bookingForm">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Имя" required>
+                    <label for="phone">Ваш телефон</label>
+                    <input type="tel" id="phone" placeholder="Телефон" required>
+                    <label for="date">Выберите дату</label>
+                    <input type="date" id="date" required>
+                    <label for="time">Выберите время</label>
+                    <input type="time" id="time" required>
+                    <button type="submit" class="btn_blue">Записаться</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="myModal_confirm" class="modal_confirm">
+            <div class="modal_content_confirm">
+                <span class="close_confirm close_reg">&times;</span>
+                <h2 class="modal_title_confirm">Вы уверены, что хотите удалить все объекты недвижимости?</h2>
+                <div class="btn_confirm">
+                    <button type="button" class="btn_cancel_confirm">Нет</button>
+                    <button type="button" class="btn_confirm_action">Да</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            const modal1 = document.getElementById('myModal_confirm');
+            const cancelBookingBtns = document.querySelectorAll('.delete');
+            const closeModalBt = document.querySelector('.close_confirm');
+            const btnCancel = document.querySelector('.btn_cancel_confirm');
+
+            cancelBookingBtns.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    modal1.style.display = 'block';
+                });
+            });
+
+            closeModalBt.addEventListener('click', () => {
+                modal1.style.display = 'none';
+            });
+
+            btnCancel.addEventListener('click', () => {
+                modal1.style.display = 'none';
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal1) {
+                    modal1.style.display = 'none';
+                }
+            });
+        </script>
+
+        <script>
+            const modal = document.getElementById('myModal');
+            const openModalBtns = document.querySelectorAll('.btn_see_form');
+            const closeModalBtn = document.getElementById('closeModal');
+
+            openModalBtns.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    modal.style.display = 'block';
+                });
+            });
+
+            closeModalBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            document.getElementById('bookingForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const date = document.getElementById('date').value;
+                const time = document.getElementById('time').value;
+
+                if (name && phone && date && time) {
+                    alert(`Спасибо за запись, ${name}! Мы свяжемся с вами для подтверждения записи на ${date} в ${time}.`);
+                    modal.style.display = 'none';
+                } else {
+                    alert('Пожалуйста, заполните все поля.');
+                }
+            });
+        </script>
+
+    </div>
+    <!-- favorit end -->
+
+
+    <!-- footer start  -->
+    <footer class="distance">
+        <div class="footer_menu container tel_menu_footer">
+            <div class="nav_menu">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo/logo.png" alt="">
+                        <p>Компас <span class="logo_span">недвижимости</span></p>
+                    </a>
+                </div>
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <a href="favorit.html">Избранное</a>
+                    <a href="catalog.html">Каталог</a>
+                </nav>
+            </div>
+            <div class="links_footer">
+                <p>©Матросова Полина Евгеньевна, 2025 г.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end  -->
+
+</body>
+
+</html>

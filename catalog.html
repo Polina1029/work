@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компас недвижимости</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- btn_to_top -->
+    <a href="#" class="btn_to_top">↑</a>
+
+    <!-- header start -->
+    <header>
+        <div class="header_all header_bottom">
+            <div class="header_menu header_menu_content container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo/logo.png" alt="">
+                        Компас <span>недвижимости</span>
+                    </a>
+                </div>
+
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <a href="favorit.html">Избранное</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a class="user_icon"><img src="assets/images/header/User.png" alt=""></a>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="header_tel">
+
+            <div class="burger-menu">
+
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo/logo.png" alt="">
+                        Компас <span>недвижимости</span>
+                    </a>
+                </div>
+
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle" class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="burger-menu-nav">
+                    <a href="index.html">Главная</a>
+                    <a href="favorit.html">Избранное</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a class="user_icon" id="open-login-btn">Войти</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="modal_reg">
+            <div class="modal_content_reg">
+                <span class="close_reg">&times;</span>
+                <h2>Регистрация</h2>
+                <form action="#" method="POST">
+                    <label for="name_reg">Ваше имя</label>
+                    <input type="text" id="name_reg" name="name_reg" placeholder="Введите имя">
+
+                    <label for="email_reg">Ваша почта</label>
+                    <input type="email" id="email_reg" name="email_reg" placeholder="Введите почту">
+
+                    <label for="password_reg">Пароль</label>
+                    <input type="password" id="password_reg" name="password_reg" placeholder="Придумайте пароль">
+
+                    <label for="confirm_password_reg">Подтверждение пароля</label>
+                    <input type="password" id="confirm_password_reg" name="confirm_password_reg"
+                        placeholder="Повторите пароль">
+
+                    <p class="person_lisense">Нажимая кнопку ниже вы даете разрешение <a
+                            href="assets/documents/person_info.doc">на обработку персональных данных</a></p>
+                    <button type="submit" class="btn_reg">Зарегистрироваться</button>
+                </form>
+                <div class="acaunt">
+                    <p>Уже есть аккаунт?</p>
+                    <a href="#" id="open-login-modal">Войдите</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal_login" id="login-modal">
+            <div class="modal_content_login">
+                <span class="close_login" id="close-login-modal">&times;</span>
+                <h2>Вход</h2>
+                <form>
+                    <label for="email">Ваша почта</label>
+                    <input type="email" id="email" placeholder="Введите почту">
+
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Введите пароль">
+
+                    <button type="submit" class="btn_login">Войти</button>
+                </form>
+                <div class="acaunt">
+                    <p>Еще нет аккаунта? Тогда </p>
+                    <p><a href="#">Зарегистрируйтесь</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="assets/js/main.js"></script>
+    </header>
+
+    <!-- header end -->
+
+
+    <!-- catalog start -->
+    <div class="catalog container">
+        <div class="title">
+            <p class="name">Поиск недвижимости</p>
+        </div>
+
+        <div class="filter">
+            <div class="dropdown">
+                <select>
+                    <option disabled selected>Тип недвижимости</option>
+                    <option>Дом</option>
+                    <option>Квартира</option>
+                </select>
+            </div>
+
+            <div class="dropdown">
+                <select>
+                    <option disabled selected>Количество комнат</option>
+                    <option>Студия</option>
+                    <option>1 комната</option>
+                    <option>2 комнаты</option>
+                    <option>3 комнаты</option>
+                </select>
+            </div>
+
+            <div class="dropdown">
+                <select>
+                    <option disabled selected>Район</option>
+                    <option>Авиастроительный</option>
+                    <option>Московский</option>
+                    <option>Ново-Савиновский</option>
+                    <option>Приволжский</option>
+                    <option>Кировский</option>
+                    <option>Вахитовский</option>
+                    <option>Советский</option>
+                </select>
+            </div>
+
+            <div class="dropdown">
+                <select>
+                    <option disabled selected>Цена</option>
+                    <option>до 10 млн. руб.</option>
+                    <option>до 20 млн. руб.</option>
+                    <option>до 30 млн. руб.</option>
+                </select>
+            </div>
+
+            <a href="#" class="btn_blue">Поиск</a>
+
+        </div>
+
+        <div class="catalog_cards">
+
+            <div class="catalog_card">
+                <img src="assets/images/catalog/1.png" alt="">
+                <div class="info">
+                    <p class="name">ЖК «Эталон»</p>
+                    <p class="adress"><img src="assets/images/icons/Location.png" alt=""> Ягодинская улица, 25</p>
+                    <div class="info_abaut_home">
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Surface.png" alt="">
+                            38 кв.м
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bed.png" alt="">
+                            1
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bathtub.png" alt="">
+                            1
+                        </div>
+                    </div>
+                    <div class="price_btn">
+                        <p class="price">9 000 000 ₽</p>
+                        <a href="card_house.html" class="btn_border">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog_card">
+                <img src="assets/images/catalog/2.png" alt="">
+                <div class="info">
+                    <p class="name">ЖК «Лазурь»</p>
+                    <p class="adress"><img src="assets/images/icons/Location.png" alt=""> улица Бондаренко, 15</p>
+                    <div class="info_abaut_home">
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Surface.png" alt="">
+                            47 кв.м
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bed.png" alt="">
+                            2
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bathtub.png" alt="">
+                            1
+                        </div>
+                    </div>
+                    <div class="price_btn">
+                        <p class="price">9 000 000 ₽</p>
+                        <a href="card_house.html" class="btn_border">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog_card">
+                <img src="assets/images/catalog/3.png" alt="">
+                <div class="info">
+                    <p class="name">ЖК «Симфония»</p>
+                    <p class="adress"><img src="assets/images/icons/Location.png" alt="">Федосеевская улица, 54</p>
+                    <div class="info_abaut_home">
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Surface.png" alt="">
+                            36 кв.м
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bed.png" alt="">
+                            студия
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bathtub.png" alt="">
+                            1
+                        </div>
+                    </div>
+                    <div class="price_btn">
+                        <p class="price">7 800 000 ₽</p>
+                        <a href="card_house.html" class="btn_border">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog_card">
+                <img src="assets/images/catalog/4.png" alt="">
+                <div class="info">
+                    <p class="name">ЖК «Симфония»</p>
+                    <p class="adress"><img src="assets/images/icons/Location.png" alt="">Федосеевская улица, 54</p>
+                    <div class="info_abaut_home">
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Surface.png" alt="">
+                            36 кв.м
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bed.png" alt="">
+                            студия
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bathtub.png" alt="">
+                            1
+                        </div>
+                    </div>
+                    <div class="price_btn">
+                        <p class="price">7 800 000 ₽</p>
+                        <a href="card_house.html" class="btn_border">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog_card">
+                <img src="assets/images/catalog/5.png" alt="">
+                <div class="info">
+                    <p class="name">ЖК «Симфония»</p>
+                    <p class="adress"><img src="assets/images/icons/Location.png" alt="">Федосеевская улица, 54</p>
+                    <div class="info_abaut_home">
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Surface.png" alt="">
+                            36 кв.м
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bed.png" alt="">
+                            студия
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bathtub.png" alt="">
+                            1
+                        </div>
+                    </div>
+                    <div class="price_btn">
+                        <p class="price">7 800 000 ₽</p>
+                        <a href="card_house.html" class="btn_border">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog_card">
+                <img src="assets/images/catalog/6.png" alt="">
+                <div class="info">
+                    <p class="name">ЖК «Симфония»</p>
+                    <p class="adress"><img src="assets/images/icons/Location.png" alt="">Федосеевская улица, 54</p>
+                    <div class="info_abaut_home">
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Surface.png" alt="">
+                            36 кв.м
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bed.png" alt="">
+                            студия
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bathtub.png" alt="">
+                            1
+                        </div>
+                    </div>
+                    <div class="price_btn">
+                        <p class="price">7 800 000 ₽</p>
+                        <a href="card_house.html" class="btn_border">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog_card">
+                <img src="assets/images/catalog/7.png" alt="">
+                <div class="info">
+                    <p class="name">ЖК «Симфония»</p>
+                    <p class="adress"><img src="assets/images/icons/Location.png" alt="">Федосеевская улица, 54</p>
+                    <div class="info_abaut_home">
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Surface.png" alt="">
+                            36 кв.м
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bed.png" alt="">
+                            студия
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bathtub.png" alt="">
+                            1
+                        </div>
+                    </div>
+                    <div class="price_btn">
+                        <p class="price">7 800 000 ₽</p>
+                        <a href="card_house.html" class="btn_border">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog_card">
+                <img src="assets/images/catalog/8.png" alt="">
+                <div class="info">
+                    <p class="name">ЖК «Симфония»</p>
+                    <p class="adress"><img src="assets/images/icons/Location.png" alt="">Федосеевская улица, 54</p>
+                    <div class="info_abaut_home">
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Surface.png" alt="">
+                            36 кв.м
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bed.png" alt="">
+                            студия
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bathtub.png" alt="">
+                            1
+                        </div>
+                    </div>
+                    <div class="price_btn">
+                        <p class="price">7 800 000 ₽</p>
+                        <a href="card_house.html" class="btn_border">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog_card">
+                <img src="assets/images/catalog/9.png" alt="">
+                <div class="info">
+                    <p class="name">ЖК «Симфония»</p>
+                    <p class="adress"><img src="assets/images/icons/Location.png" alt="">Федосеевская улица, 54</p>
+                    <div class="info_abaut_home">
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Surface.png" alt="">
+                            36 кв.м
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bed.png" alt="">
+                            студия
+                        </div>
+                        <div class="info_abaut_home_card">
+                            <img src="assets/images/icons/Bathtub.png" alt="">
+                            1
+                        </div>
+                    </div>
+                    <div class="price_btn">
+                        <p class="price">7 800 000 ₽</p>
+                        <a href="card_house.html" class="btn_border">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- catalog end -->
+
+
+    <!-- footer start  -->
+    <footer class="distance">
+        <div class="footer_menu container">
+            <div class="nav_menu">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo/logo.png" alt="">
+                        <p>Компас <span class="logo_span">недвижимости</span></p>
+                    </a>
+                </div>
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <a href="favorit.html">Избранное</a>
+                    <a href="catalog.html">Каталог</a>
+                </nav>
+            </div>
+            <div class="links_footer">
+                <p>©Матросова Полина Евгеньевна, 2025 г.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end  -->
+
+</body>
+
+</html>
