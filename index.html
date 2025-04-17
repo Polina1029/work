@@ -58,6 +58,48 @@
     <!-- header end -->
 
 
+    <div id="overlay"></div>
+    <div id="modal_out">
+      <p id="message">Уже уходите? 😢</p>
+      <button id="no_button">Нет</button>
+    </div>
+  
+    <script>
+      const modal = document.getElementById('modal_out');
+      const overlay = document.getElementById('overlay');
+      const noButton = document.getElementById('no_button');
+      const message = document.getElementById('message');
+  
+      function showModal() {
+        modal.style.display = 'block';
+        overlay.style.display = 'block';
+      }
+  
+      function hideModal() {
+        modal.style.display = 'none';
+        overlay.style.display = 'none';
+      }
+  
+      document.addEventListener('mouseout', (event) => {
+        if (!event.relatedTarget && !event.toElement) {
+          showModal();
+        }
+      });
+  
+      noButton.addEventListener('mouseover', () => {
+        message.textContent = 'Уже уходите? 😊';
+      });
+  
+      noButton.addEventListener('mouseout', () => {
+        message.textContent = 'Уже уходите? 😢';
+      });
+  
+      noButton.addEventListener('click', () => {
+        hideModal();
+      });
+    </script>
+
+
     <!-- banner start -->
     <div class="banner container">
 
@@ -70,7 +112,7 @@
                 <a href="#">
                     <img src="assets/images/logo/logo.png" alt="">
                     <p>Компас <span class="logo_span">недвижимости</span></p>
-    card_house.html        </a>
+                </a>
             </div>
 
             <p class="banner_txt">Укажем направление к<br> вашему идеальному<br> пространству!</p>
